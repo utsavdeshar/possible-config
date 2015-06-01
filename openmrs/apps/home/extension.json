@@ -25,7 +25,7 @@
         "type": "link",
         "label": "Admission & Discharge",
         "url": "../adt/",
-        "icon": "fa-bed",
+        "icon": "icon-hospital",
         "order": 3,
         "requiredPrivilege": "app:adt"
     },
@@ -65,7 +65,7 @@
         "label": "Incident Reporting",
         "url": "https://docs.google.com/forms/d/1k55evW5y6v8_Tg1rN8IyNXGVbv1UbtKHEoPpinjdYgk/viewform?c=0&w=1",
 	"target": "_blank",
-        "icon": "fa-pencil-square-o",
+        "icon": "icon-file-alt",
         "order": 9
     }
 ]
