@@ -183,5 +183,23 @@
         }
       }
     ]
+  },
+  {
+    "title": "Birth Certificate",
+    "displayByDefault": true,
+    "sections": [
+    	{
+		"name": "birthCert",
+		"type": "custom",
+		"templateURL" : "birth_certificate.html",
+		"config": {
+          		  "numberOfVisits": 1,
+          		  "obsIgnoreList": [],
+          		  "conceptNames":["Delivery Note, Liveborn gender"]
+       		}
+	}
+    ]
+    
   }
+
 ]
