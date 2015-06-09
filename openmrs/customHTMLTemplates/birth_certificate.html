@@ -1,4 +1,17 @@
 <section>
-This is to certify that a live <ng-if="observations[0]">{{observations[0].value_text}}</ng-if> was born on BABYBIRTHDATE at BIRTHTIME with weight BABYWEIGHT.  The type of birth was TYPEOFBIRTH.  The name of the mother is NAMEOFMOTHER.  The name of the father is NAMEOFFATHER.  The mother is a resident of country COUNTRY, district DISTRICT, village VILLAGE, wardnumber WARDNUMBER.
+This is to certify that a live {{dataMap['Delivery Note, Liveborn gender']}} was born on {{dataMap['Delivery Note, Delivery date and time']}} with weight {{dataMap['Delivery Note, Liveborn weight']}} grams.  The type of birth was {{dataMap['Delivery Note, Method of Delivery']}}.  The name of the mother is {{patient.name}}.  The name of the father is {{dataMap['Name of father']}}.  The mother is a resident of district {{patient.address.countyDistrict}}, village {{patient.address.cityVillage}}, wardnumber {{patient.address.address1}}.
+
+<br>
+<br>
+The following fields need to be completed.  Click print when done.
+<br>
+<div ng-repeat="(key, value) in dataMap">
+  <ng-form name="{{key}} form">
+    <span ng-if="needsToBeEnteredMap[key]">
+      <label>{{key}}</label>
+      <input type="text" name="{{key}}formData" ng-model="dataMap[key]" require>
+    </span>
+  </ng-form>
+</div>
 </section>
 
