@@ -933,6 +933,12 @@
         "Delivery Note, Liveborn weight": {
           "required": true
         },
+	"Delivery Note, Liveborn gender": {
+	  "required":true
+	},
+	"Delivery Note, Delivery date and time": {
+	  "required":true
+	},
         "Delivery Note, Chlorhexidine applied on cord": {
           "required": true
         },

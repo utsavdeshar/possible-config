@@ -20,15 +20,25 @@
                 display: none;
             }
         }
+
+	img.logo {
+         	height:10%;
+	        width:10%;
+         	padding-bottom:10px;
+	}
+
+	.phys-sig{
+	      padding-top:10px;
+	}
     </style>
     <link rel="stylesheet" href="../styles/clinicalPrint.css" media="all"/>
 </head>
 <body>
 <div class="print-wrapper">
     <div class="certificate">
-        <div class="print-header">
+        <div class="print-header" align="center">
             <h1>
-                <img class="logo" src="../images/nhn-logo.png" alt="logo">
+                <img class="logo" src="../images/nhn-logo.png" alt="logo"><br>
                 Bayalpata Hospital</h1>
 
             <h2>Birth Certificate</h2>
@@ -44,6 +54,10 @@
             village {{patient.address.cityVillage}},
             wardnumber {{patient.address.address1}}.
         </section>
+	<div class="phys-sig" align="right">Physician Name: _________________________ <br><br>
+	  Physician Signature: _________________________ <br><br>
+	  Date: _________________________
+	</div>
     </div>
 
 
@@ -53,6 +67,7 @@
 
         <p>Father's Name : <input type="text" ng-model="nameOfTheFather" require></p>
         <br/><br/>
+	
         <input type="button" value="Print Birth Certificate" onclick="showPrint()"/>
     </div>
 </div>
