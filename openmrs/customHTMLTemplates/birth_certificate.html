@@ -1,17 +1,67 @@
-<section>
-This is to certify that a live {{dataMap['Delivery Note, Liveborn gender']}} was born on {{dataMap['Delivery Note, Delivery date and time']}} with weight {{dataMap['Delivery Note, Liveborn weight']}} grams.  The type of birth was {{dataMap['Delivery Note, Method of Delivery']}}.  The name of the mother is {{patient.name}}.  The name of the father is {{dataMap['Name of father']}}.  The mother is a resident of district {{patient.address.countyDistrict}}, village {{patient.address.cityVillage}}, wardnumber {{patient.address.address1}}.
+<html>
+<head>
+    <style>
+        .print-header {
+            padding-bottom: 30px;
+        }
 
-<br>
-<br>
-The following fields need to be completed.  Click print when done.
-<br>
-<div ng-repeat="(key, value) in dataMap">
-  <ng-form name="{{key}} form">
-    <span ng-if="needsToBeEnteredMap[key]">
-      <label>{{key}}</label>
-      <input type="text" name="{{key}}formData" ng-model="dataMap[key]" require>
-    </span>
-  </ng-form>
+        .non-printable {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .non-printable hr {
+            border: 0;
+            border-bottom: 1px solid #000;
+        }
+
+        @media print {
+            .dashboard-header, .visits-navbar-section, .non-printable {
+                display: none;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../styles/clinicalPrint.css" media="all"/>
+</head>
+<body>
+<div class="print-wrapper">
+    <div class="certificate">
+        <div class="print-header">
+            <h1>
+                <img class="logo" src="../images/nhn-logo.png" alt="logo">
+                Bayalpata Hospital</h1>
+
+            <h2>Birth Certificate</h2>
+        </div>
+        <section>
+            This is to certify that a live {{getValue('Delivery Note, Liveborn gender')}}
+            was born on {{getValue('Delivery Note, Delivery date and time')}}
+            with weight {{getValue('Delivery Note, Liveborn weight')}} grams.
+            The type of birth was {{getValue('Delivery Note, Method of Delivery')}}.
+            The name of the mother is {{patient.name}}.
+            The name of the father is {{nameOfTheFather}}.
+            The mother is a resident of district {{patient.address.countyDistrict}},
+            village {{patient.address.cityVillage}},
+            wardnumber {{patient.address.address1}}.
+        </section>
+    </div>
+
+
+    <div class="non-printable">
+        <p>The following fields need to be completed</p>
+        <br/>
+
+        <p>Father's Name : <input type="text" ng-model="nameOfTheFather" require></p>
+        <br/><br/>
+        <input type="button" value="Print Birth Certificate" onclick="showPrint()"/>
+    </div>
 </div>
-</section>
 
+<script>
+    function showPrint() {
+        window.print();
+    }
+</script>
+
+</body>
+</html>
