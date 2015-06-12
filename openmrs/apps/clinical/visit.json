@@ -1,7 +1,7 @@
 [
     {
         "title": "General",
-        "displayByDefault": false,
+        "displayByDefault": true,
         "defaultSections": true,
         "printing": {
             "title": "Bayalpata Hospital",
@@ -186,7 +186,7 @@
     },
     {
         "title": "Birth Certificate",
-        "displayByDefault": true,
+        "displayByDefault": false,
         "sections": [
             {
                 "name": "birthCert",
