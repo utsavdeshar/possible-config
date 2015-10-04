@@ -120,6 +120,20 @@
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {
+            "searchHandler": "emrapi.sqlSearch.todaysPatientsByProvider",
+            "display":"My Patients",
+            "forwardUrl" : "#/patient/{{patientUuid}}/dashboard",
+            "refreshTime": 1200
+        },
+        "label": "My Patients",
+        "order": 9,
+        "requiredPrivilege": "app:pharmacy"
+    },
+    {
+        "id": "bahmni.clinical.patients.search.allPatients",
+        "extensionPointId": "org.bahmni.patient.search",
+        "type": "config",
+        "extensionParams": {
             "display":"All",
             "forwardUrl" : "#/patient/{{patientUuid}}/treatment",
             "refreshTime": 1200
