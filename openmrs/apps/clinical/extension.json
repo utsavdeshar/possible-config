@@ -50,6 +50,15 @@
         "order": 5,
         "requiredPrivilege": "app:pharmacy"
     },
+        "id": "bahmni.clinical.consultation.treatment",
+        "extensionPointId": "org.bahmni.clinical.consultation.board",
+        "type": "link",
+        "label": "Treatment",
+        "url": "treatment",
+        "icon": "fa-user-md",
+        "order": 5,
+        "requiredPrivilege": "app:clinical"
+    },
     {
         "id": "bahmni.clinical.orders.pending",
         "extensionPointId": "org.bahmni.clinical.orders",
@@ -120,12 +129,12 @@
         "extensionPointId": "org.bahmni.patient.search",
         "type": "config",
         "extensionParams": {
-            "searchHandler": "emrapi.sqlSearch.todaysPatientsByProvider",
-            "display":"My Patients",
-            "forwardUrl" : "#/patient/{{patientUuid}}/dashboard",
+            "searchHandler": "emrapi.sqlSearch.todaysPatients",
+            "display":"Today's Patients",
+            "forwardUrl" : "#/patient/{{patientUuid}}/treatment",
             "refreshTime": 1200
         },
-        "label": "My Patients",
+        "label": "Today's Patients",
         "order": 9,
         "requiredPrivilege": "app:pharmacy"
     },
