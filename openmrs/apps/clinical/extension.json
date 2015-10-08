@@ -104,7 +104,7 @@
         "extensionParams": {
             "searchHandler": "emrapi.sqlSearch.admittedPatients",
             "display": "Admitted",
-            "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard",
+            "forwardUrl": "#/patient/{{patientUuid}}/dashboard",
 	    "refreshTime": 1200
         },
         "label": "Admitted",
