@@ -1216,6 +1216,27 @@
         "config": {
             "templateName": "Procedure Notes"
         }
+    },
+    {
+        "name": "CHP Antenatal Care",
+        "type": "obsTemplate",
+        "config": {
+            "templateName": "CHP Antenatal Care"
+        }
+    },
+    {
+        "name": "ANC note",
+        "type": "obsTemplate",
+        "config": {
+            "templateName": "ANC"
+        }
+    },
+    {
+        "name": "Discharge note",
+        "type": "obsTemplate",
+        "config": {
+            "templateName": "Discharge Note"
+        }
     }
     
     

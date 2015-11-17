@@ -37,8 +37,18 @@
         "label": "Disposition",
         "url": "disposition",
         "icon": "fa-user-md",
-        "order": 4,
+        "order": 5,
         "requiredPrivilege": "app:clinical:dispositionTab"
+    },
+    {
+        "id": "bahmni.clinical.consultation.treatment",
+        "extensionPointId": "org.bahmni.clinical.consultation.board",
+        "type": "link",
+        "label": "Treatment",
+        "url": "treatment",
+        "icon": "fa-user-md",
+        "order": 4,
+        "requiredPrivilege": "app:clinical"
     },
     {
         "id": "bahmni.clinical.consultation.treatment",
@@ -49,15 +59,6 @@
         "icon": "fa-user-md",
         "order": 5,
         "requiredPrivilege": "app:pharmacy"
-    },
-        "id": "bahmni.clinical.consultation.treatment",
-        "extensionPointId": "org.bahmni.clinical.consultation.board",
-        "type": "link",
-        "label": "Treatment",
-        "url": "treatment",
-        "icon": "fa-user-md",
-        "order": 5,
-        "requiredPrivilege": "app:clinical"
     },
     {
         "id": "bahmni.clinical.orders.pending",
@@ -93,6 +94,19 @@
         },
         "label": "My Patients",
         "order": 2,
+        "requiredPrivilege": "app:clinical"
+    },
+    {
+        "id": "bahmni.clinical.patients.search.allPatients",
+        "extensionPointId": "org.bahmni.patient.search",
+        "type": "config",
+        "extensionParams": {
+            "searchHandler": "emrapi.sqlSearch.todaysPatients",
+            "display":"Today's Patients",
+            "forwardUrl" : "#/patient/{{patientUuid}}/treatment"
+        },
+        "label": "Today's Patients",
+        "order": 3,
         "requiredPrivilege": "app:clinical"
     },
     {

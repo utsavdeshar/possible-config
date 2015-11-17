@@ -94,8 +94,7 @@
         "extensionParams": {
             "searchHandler": "emrapi.sqlSearch.patientsToAdmit",
             "display":"To Admit",
-            "forwardUrl":"#/patient/{{patientUuid}}/visit/{{visitUuid}}/admit",
-            "refreshTime": 1200
+            "forwardUrl":"#/patient/{{patientUuid}}/visit/{{visitUuid}}/admit"
         },
         "label": "To Admit",
         "order": 1,
@@ -108,8 +107,7 @@
         "extensionParams": {
             "searchHandler": "emrapi.sqlSearch.admittedPatients",
             "display":"Admitted",
-            "forwardUrl" : "#/patient/{{patientUuid}}/visit/{{visitUuid}}/transfer",
-            "refreshTime": 1200
+            "forwardUrl" : "#/patient/{{patientUuid}}/visit/{{visitUuid}}/transfer"
         },
         "label": "Admitted",
         "order": 2,
@@ -122,8 +120,7 @@
         "extensionParams": {
             "searchHandler": "emrapi.sqlSearch.patientsToDischarge",
             "display":"To Discharge",
-            "forwardUrl" : "#/patient/{{patientUuid}}/visit/{{visitUuid}}/discharge",
-            "refreshTime": 1200
+            "forwardUrl" : "#/patient/{{patientUuid}}/visit/{{visitUuid}}/discharge"
         },
         "label": "To Discharge",
         "order": 3,
