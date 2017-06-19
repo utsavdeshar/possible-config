@@ -10,7 +10,8 @@
         "name": "Hospital Activities - Number of Clients Served (Referred) [Check for only]",
         "type": "obsCount",
         "config": {
-            "ageGroupName": "Below 20",
+
+            "ageGroupName": "Deepaks edit group",
             "conceptNames": [
                 "Disposition"
             ]
