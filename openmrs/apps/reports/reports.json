@@ -10,7 +10,7 @@
         "name": "Hospital Activities - Number of Clients Served (Referred) [Check for only 'Referred' grid]",
         "type": "obsCount",
         "config": {
-            "ageGroupName": "Client Service Reports",
+            "ageGroupName": "Deepaks edit group",
             "conceptNames": [
                 "Disposition"
             ]
