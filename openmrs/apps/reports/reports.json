@@ -7,10 +7,10 @@
         }
     },
     "hospital_activities__number_of_clients_served_referred_check_for_only_referred_grid": {
-        "name": "Hospital Activities - Number of Clients Served (Referred) [Check for only 'Referred' grid]",
+        "name": "Hospital Activities - Number of Clients Served (Referred) [Check for only]",
         "type": "obsCount",
         "config": {
-            "ageGroupName": "Client Service Reports",
+            "ageGroupName": "Below 20",
             "conceptNames": [
                 "Disposition"
             ]
