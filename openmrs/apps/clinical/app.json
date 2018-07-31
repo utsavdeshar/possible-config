@@ -20,6 +20,9 @@
 	"visitUuid"],
 	"config": {
 		"defaultVisitType": "General",
+		"enableRadiologyOrderOptions":["Urgent","NeedsPrint"],
+		"enableLabOrderOptions":["Urgent","NeedsPrint"],
+
 		"visitTypeForRetrospectiveEntries": "General",
 		"obsIgnoreList": ["Patient file"],
 		"patientConfig":{
