@@ -30,7 +30,10 @@
         "showMiddleName": true,
         "showLastName": true,
         "defaultVisitType": "General",
-
+        "isLastNameMandatory": true,
+        "showSaveConfirmDialog": false,
+        "showBirthTime": true,
+        "showCasteSameAsLastNameCheckbox": false,
         "conceptSetUI": {
             "Department Sent To": {
                 "required": false,
@@ -74,8 +77,8 @@
                 "errorMessage": "Should contain characters"
             },
             "address1": {
-                "pattern": "[a-zA-Z0-9\\s]{2,}",
-                "errorMessage": "Should contain at least 2 characters"
+                "pattern": "^(0?[1-9]|[1-9][0-9])$",
+                "errorMessage": "Should be between 1 to 99"
             }
         },
         "patientSearch": {
