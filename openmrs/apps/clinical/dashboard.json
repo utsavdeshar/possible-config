@@ -118,9 +118,10 @@
             "labResults": {
                 "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type": "labOrders",
+                "displayOrder": 6,
                 "dashboardConfig": {
                     "title": null,
-                    "numberOfVisits": 2,
+                    "numberOfVisits": 6,
                     "showChart": false,
                     "showTable": true,
                     "showNormalLabResults": true,
@@ -559,6 +560,69 @@
                     "showDetailsButton": true
                 },
                 "displayOrder": 1
+            },
+            "growthChart": {
+                "type": "observationGraph",
+                "translationKey": "DASHBOARD_TITLE_GROWTH_CHART",
+                "config": {
+                    "yAxisConcepts": [
+                        "Weight"
+                    ],
+                    "referenceData": "growthChartReference.csv",
+                    "numberOfVisits": 20
+                },
+                "displayOrder": 2
+            },
+            "BP": {
+                "type": "observationGraph",
+                "translationKey": "DASHBOARD_TITLE_BLOOD_PRESSURE",
+                "config": {
+                    "yAxisConcepts": [
+                        "Systolic Data",
+                        "Diastolic Data"
+                    ],
+                    "xAxisConcept": "observationDateTime",
+                    "numberOfVisits": 10
+                },
+                "displayOrder": 3
+            },
+            "weight/BMI": {
+                "type": "observationGraph",
+                "translationKey": "DASHBOARD_TITLE_WEIGHT_BMI",
+                "config": {
+                    "yAxisConcepts": [
+                        "Weight",
+                        "BMI"
+                    ],
+                    "xAxisConcept": "observationDateTime",
+                    "numberOfVisits": 10
+                },
+                "displayOrder": 4
+            },
+            "diabetes/BloodSugar": {
+                "type": "observationGraph",
+                "translationKey": "DASHBOARD_TITLE_DIABETES_BLOOD_SUGAR",
+                "config": {
+                    "yAxisConcepts": [
+                        "Blood Sugar Fasting",
+                        "Blood Sugar P.P"
+                    ],
+                    "xAxisConcept": "observationDateTime",
+                    "numberOfVisits": 10
+                },
+                "displayOrder": 5
+            },
+            "observationGraph": {
+                "type": "observationGraph",
+                "translationKey": "DASHBOARD_TITLE_PULSE",
+                "config": {
+                    "yAxisConcepts": [
+                        "Pulse Data"
+                    ],
+                    "xAxisConcept": "observationDateTime",
+                    "numberOfVisits": 10
+                },
+                "displayOrder": 6
             }
         }
     },

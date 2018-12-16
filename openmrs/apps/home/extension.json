@@ -59,6 +59,17 @@
     "order": 6,
     "requiredPrivilege": "app:reports"
   },
+  "bahmniIpd": {
+    "id": "bahmni.ipd",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_BED_MANAGEMENT_KEY",
+    "label": "InPatient",
+    "url": "../bedmanagement/#/home",
+    "icon": "fa-bed",
+    "order": 7,
+    "requiredPrivilege": "app:adt"
+  },
   "bahmniBilling": {
     "id": "bahmni.billing",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -66,7 +77,7 @@
     "translationKey": "MODULE_LABEL_PRESCRIPTION_KEY",
     "url": "../clinical/",
     "icon": "fa-flask",
-    "order": 7,
+    "order": 8,
     "requiredPrivilege": "app:pharmacy"
   },
   "admin": {
@@ -76,7 +87,7 @@
     "translationKey": "MODULE_LABEL_ADMIN_KEY",
     "url": "../admin/#/dashboard/home",
     "icon": "icon-bahmni-admin",
-    "order": 8,
+    "order": 9,
     "requiredPrivilege": "app:admin"
   },
   "radiologyDocumentUpload": {
@@ -86,7 +97,7 @@
     "translationKey": "MODULE_LABEL_RADIOLOGY_UPLOAD_KEY",
     "url": "../document-upload/?encounterType=RADIOLOGY&topLevelConcept=Radiology",
     "icon": "icon-bahmni-radiology",
-    "order": 9,
+    "order": 10,
     "requiredPrivilege": "app:radiology-upload"
   },
   "patientDocumentUpload": {
@@ -96,9 +107,19 @@
     "translationKey": "MODULE_LABEL_PATIENT_DOCUMENTS_KEY",
     "url": "../document-upload/?encounterType=Patient Document&topLevelConcept=Patient Document&defaultOption=Patient file",
     "icon": "icon-bahmni-documents",
-    "order": 10,
+    "order": 11,
     "requiredPrivilege": "app:patient-documents"
-  },  
+  },
+  "bahmniOT": {
+    "id": "bahmni.ot",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "Operation Theatre",
+    "url": "../ot/",
+    "icon": "fa-hospital-o",
+    "order": 12,
+    "requiredPrivilege": "app:ot"
+  },
   "appointments": {
     "id": "bahmni.appointments",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -106,7 +127,7 @@
     "translationKey": "MODULE_LABEL_APOOINTMENTS_KEY",
     "url": "../../openmrs/appointmentschedulingui/home.page",
     "icon": "fa fa-calendar",
-    "order": 11,
+    "order": 13,
     "requiredPrivilege": "App: appointmentschedulingui.home"
   },
   "implementerInterface": {
@@ -116,7 +137,7 @@
     "translationKey": "MODULE_LABEL_IMPLEMENTER_INTERFACE_KEY",
     "url": "/implementer-interface",
     "icon": "fa fa-pencil-square-o",
-    "order": 12,
+    "order": 14,
     "requiredPrivilege": "app:implementer-interface"
   },
   "atomfeedConsole": {
@@ -126,7 +147,7 @@
     "translationKey": "MODULE_LABEL_ATOMFEED_CONSOLE_KEY",
     "url": "/atomfeed-console",
     "icon": "fa fa-terminal",
-    "order": 13,
+    "order": 15,
     "requiredPrivilege": "app:admin"
   },
   "appointmentScheduling": {
@@ -136,7 +157,7 @@
     "translationKey": "MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY",
     "url": "../appointments",
     "icon": "fa fa-calendar",
-    "order": 14,
+    "order": 16,
     "requiredPrivilege": "app:appointments"
   },
   "possibleDhis2Integration": {
@@ -146,7 +167,7 @@
     "translationKey": "MODULE_LABEL_DHIS_2_INTEGRATION_KEY",
     "url": "/dhis-integration/index.html",
     "icon": "fa-book",
-    "order": 15,
+    "order": 17,
     "requiredPrivilege": "app:reports"
   },
   "bahmniIncidentReporting": {
@@ -157,7 +178,7 @@
     "url": "https://docs.google.com/forms/d/1k55evW5y6v8_Tg1rN8IyNXGVbv1UbtKHEoPpinjdYgk/viewform?c=0&w=1",
     "target": "_blank",
     "icon": "fa-flag",
-    "order": 16
+    "order": 18
   },
   "bahmniIssueReporting": {
     "id": "bahmni.issueReporting",
@@ -167,7 +188,7 @@
     "url": "https://docs.google.com/a/possiblehealth.org/forms/d/1C-F0ZBfhEaJCJDEj_iCfw4RZwYhajJV49D0IA_tLi4w/viewform?entry.1164338174&entry.94144145&entry.598291519=@possiblehealth.org&entry.1513625367=Today&entry.1833753534",
     "target": "_blank",
     "icon": "fa-bug",
-    "order": 17
+    "order": 19
   }
 
 }
