@@ -1417,5 +1417,13 @@
 		"config": {
 			"sqlPath": "/var/www/bahmni_config/openmrs/reports/defaultersList.sql"
 		}
+	},
+	"Insurance Quotation": {
+		"name": "Insurance Quotation",
+		"type": "ERPGeneric",
+		"DHISProgram": false,
+		"config": {
+			"sqlPath": "/var/www/bahmni_config/openmrs/reports/erp/insuranceTypeQuotation.sql"
+		}
 	}
 }
