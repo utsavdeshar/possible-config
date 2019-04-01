@@ -31,9 +31,7 @@ FROM
         LEFT OUTER JOIN
     (SELECT 
         DISTINCT(o1.person_id),
-            cn2.concept_id AS answer,
             cn1.concept_id AS question,
-			cn2.concept_id AS answer_name,
             v1.visit_id AS visit_id,
             v1.date_stopped AS datetime
     FROM
