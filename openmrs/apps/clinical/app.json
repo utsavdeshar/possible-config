@@ -1105,7 +1105,8 @@
 				"required": false
 			},
 			"HIVTC, Followup": {
-				"required": true
+				"required": true,
+				"allowFutureDates":true
 			},
 			"Hypertension, Patient at Treatment Goal": {
 				"required": true
