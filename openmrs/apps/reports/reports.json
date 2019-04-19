@@ -774,13 +774,6 @@
 					}
 				},
 				{
-					"name": "STI Cases-by Syndromes",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/13-HIV_AIDS/13_3_STI_Cases_ By_Syndromes.sql"
-					}
-				},
-				{
 					"name": "STI Cases-by Etiology",
 					"type": "MRSGeneric",
 					"config": {
@@ -1142,15 +1135,6 @@
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/gestational_weeks_maternal_age.sql"
 					}
 				},
-
-				{
-					"name": "Summary of Indoor Services Inpatient Outcome Referred Out",
-					"type": "MRSGeneric",
-					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-2-Hospital_Indoor_Services_Dataset/inpatient_referredout.sql"
-					}
-				},
-
 				{
 					"name": "FreeHealthServices Outpatient",
 					"type": "MRSGeneric",
