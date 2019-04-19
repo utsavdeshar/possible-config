@@ -1821,6 +1821,25 @@
 			"Leprosy, FollowUp": {
 				"allowFutureDates": true
 			},
+			"Snake bite-If yes where" :{
+				"multiSelect": true
+			},
+			"Snake bite-Local symptoms": {
+				"multiSelect": true
+			},
+			"Neurotoxicity": {
+				"multiSelect": true
+			},
+			"Snake bite-Treatment and management": {
+				"multiSelect": true,
+				"required": true
+			},
+			"Snake bite-Bleeding symptoms": {
+				"multiSelect": true
+			},
+			"Snake bite-Fang mark": {
+				"required": true
+			},
 			"defaults": {
 				"Number of living children": 1,
 				"Accepted Family Planning methods": [
