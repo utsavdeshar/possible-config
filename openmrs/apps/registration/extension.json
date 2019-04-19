@@ -37,7 +37,7 @@
         "type": "config",
         "extensionParams": {
             "display": "Enter <u>C</u>onsultation",
-            "shortcutKey": "c",
+            "shortcutKey": "C",
             "forwardUrl": "../clinical/#/default/patient/{{patientUuid}}/concept-set-group/observations"
         },
         "order": 1,
