@@ -115,14 +115,16 @@
                 },
                 "displayOrder": 4
             },
-            "labResults": {
-                "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
-                "type": "labOrders",
-                "dashboardConfig": {
-                    "title": null,
-                    "numberOfVisits": 2,
-                    "showChart": false,
-                    "showTable": true,
+            "labResults":{  
+                "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
+                "type":"labOrders",
+                "displayOrder":6,
+                "dashboardConfig":{  
+                    "title":null,
+                    "numberOfVisits":6,
+                    "showChart":false,
+                    "showTable":true,
+
                     "showNormalLabResults": true,
                     "showCommentsExpanded": true,
                     "showAccessionNotes": true,
@@ -130,8 +132,6 @@
                 },
                 "expandedViewConfig": {
                     "numberOfVisits": 20
-                },
-                "displayOrder": 5
             },
             "otherdiagnosticOrderControl": {
                 "translationKey": "DASHBOARD_TITLE_OTHER_DIAGNOSTICS_KEY",
@@ -542,21 +542,70 @@
                     "address1",
                     "countyDistrict"
                 ],
-                "displayOrder": 0
+
+                "displayOrder":0
             },
-            "operationsAndProcedures": {
-                "translationKey": "DASHBOARD_TITLE_OPERATIONS_AND_PROCEDURES_KEY",
-                "templateName": "Disease template, Orthopaedic",
-                "type": "diseaseTemplate",
-                "showOnly": [],
-                "showDetailsButton": true,
-                "dashboardConfig": {
-                    "showOnly": [],
-                    "showDetailsButton": true
+            "growthChart":{  
+                "type":"observationGraph",
+                "translationKey": "DASHBOARD_TITLE_GROWTH_CHART",
+                "config":{  
+                    "yAxisConcepts":[  
+                        "Weight"
+                    ],
+                    "referenceData":"growthChartReference.csv",
+                    "numberOfVisits":20
                 },
-                "expandedViewConfig": {
-                    "showOnly": [],
-                    "showDetailsButton": true
+                "displayOrder":1
+            },
+            "BP":{  
+                "type":"observationGraph",
+                "translationKey": "DASHBOARD_TITLE_BLOOD_PRESSURE",
+                "config":{  
+                    "yAxisConcepts":[  
+                        "Systolic Data",
+                        "Diastolic Data"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":2
+            },
+            "weight/BMI":{  
+                "type":"observationGraph",
+                "translationKey": "DASHBOARD_TITLE_WEIGHT_BMI",
+                "config":{  
+                    "yAxisConcepts":[  
+                        "Weight",
+                        "BMI"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":3
+            },
+            "diabetes/BloodSugar":{  
+                "type":"observationGraph",
+                "translationKey": "DASHBOARD_TITLE_DIABETES_BLOOD_SUGAR",
+                "config":{  
+                    "yAxisConcepts":[  
+                        "Blood Sugar Fasting",
+                        "Blood Sugar P.P"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":4
+            },
+            "observationGraph":{  
+                "type":"observationGraph",
+                "translationKey": "DASHBOARD_TITLE_PULSE",
+                "config":{  
+                    "yAxisConcepts":[  
+                        "Pulse Data"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+
                 },
                 "displayOrder": 1
             }
@@ -634,4 +683,6 @@
             }
         }
     }
+	}
+	
 }
