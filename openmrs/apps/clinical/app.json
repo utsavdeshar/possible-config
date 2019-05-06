@@ -21,6 +21,7 @@
 		"visitUuid"
 	],
 	"config": {
+		"hideConditions": false,
 		"enableNepaliCalendar": true,
 		"displayNepaliDates": true,
 		"filterObservationTemplates": true,
@@ -31,12 +32,65 @@
 			"showMiddleNameOn": ["patient-profile", "patient-context"]
 		},
 		"quickPrints": true,
-		"otherInvestigationsMap": {
-
+		"networkConnectivity": {
+			"showNetworkStatusMessage": false,
+			"networkStatusCheckInterval": 20000,
+			"locales": [{
+					"locale": "fr",
+					"css": "offline-language-french"
+				},
+				{
+					"locale": "es",
+					"css": "offline-language-spanish"
+				},
+				{
+					"locale": "pt",
+					"css": "offline-language-portuguese-brazil"
+				}
+			]
 		},
+		"diagnosisStatus": "Inactive",
+		"program": {
+			"patientInformation": {
+				"ageLimit": 100
+			},
+			"ID_Number": {
+				"required": true
+			},
+			"Co-morbidites": {
+				"excludeFrom": ["HIV Program"]
+			},
+			"Doctor": {
+				"excludeFrom": ["TB Program"]
+			}
+		},
+		"patientContext": {
+			"programAttributes": [
+				"Id_Number",
+				"Doctor",
+				"Stage"
+			],
+			"personAttributes": [
+				"class",
+				"caste"
+			],
+			"additionalPatientIdentifiers": [
+				"National ID"
+			],
+			"preferredIdentifier": "Id_Number"
+		},
+		"otherInvestigationsMap": {
+			"Radiology": "Radiology Order",
+			"Endoscopy": "Endoscopy Order"
+		},
+		"allowConsultationWhenNoOpenVisit": false,
+		"allowOnlyCodedDiagnosis": false,
 		"maxConceptSetLevels": 5,
 		"conceptSetUI": {
 			"Chief complaint": {
+				"autocomplete": true,
+				"codedConceptName": "Chief Complaint",
+				"nonCodedConceptName": "Non-Coded Chief Complaint",
 				"durationRequired": false,
 				"conciseText": true
 			},
@@ -197,7 +251,8 @@
 				"required": true
 			},
 			"CHP ANC, Follow up": {
-				"required": false
+				"required": false,
+				"allowFutureDates": true
 			},
 			"CHP ANC, Diagnosis, High Risk Low Touch": {
 				"multiSelect": true,
@@ -996,68 +1051,79 @@
 			"Asthma, Exacerbations in last 3 months": {
 				"required": true
 			},
-			"Asthma, Asthma, FollowUp": {
-				"required": true
+			"Asthma, FollowUp": {
+				"required": true,
+				"allowFutureDates": true
 			},
 			"COPD, Exacerbations in Last 3 Months": {
 				"required": true
 			},
 			"COPD, FollowUp": {
-				"required": true
+				"required": true,
+				"allowFutureDates": true
 			},
 			"CHF, Exacerbations in Last 3 Months": {
 				"required": true
 			},
 			"CHF, Followup": {
-				"required": true
+				"required": true,
+				"allowFutureDates": true
 			},
 			"Diabetes, Urine sugar outcome": {
 				"required": true
 			},
 			"Diabetes, Followup": {
-				"required": true
+				"required": true,
+				"allowFutureDates": true
 			},
 			"CKD, BP less than 140/90": {
 				"required": true
 			},
 			"CKD, FollowUp": {
-				"required": true
+				"required": true,
+				"allowFutureDates": true
 			},
 			"RA, Pain exacerbations in the past 3 months": {
 				"required": true
 			},
 			"RA, FollowUp": {
-				"required": true
+				"required": true,
+				"allowFutureDates": true
 			},
 			"CHD, BP less than 140/90": {
 				"required": true
 			},
 			"CHD, Followup": {
-				"required": true
+				"required": true,
+				"allowFutureDates": true
 			},
 			"Seizure Disorder, Number of seizures in last 3 months": {
 				"required": true
 			},
 			"Seizure Disorder, FollowUp": {
-				"required": true
+				"required": true,
+				"allowFutureDates": true
 			},
 			"Tuberculosis, Treatment Outcome": {
 				"required": true
 			},
 			"Tuberculosis, FollowUp": {
-				"required": true
+				"required": true,
+				"allowFutureDates": true
 			},
 			"HIVTC, CD4 count": {
 				"required": false
 			},
 			"HIVTC, Followup": {
-				"required": true
+				"required": true,
+				"allowFutureDates":true
 			},
 			"Hypertension, Patient at Treatment Goal": {
 				"required": true
 			},
 			"Hypertension, FollowUp": {
-				"required": true
+				"required": true,
+				"allowFutureDates": true
 			},
 			"Acute HEENT Complaint-Other symptoms": {
 				"multiSelect": true
@@ -1092,9 +1158,6 @@
 			"COPD, Co-morbidity": {
 				"multiSelect": true
 			},
-			"Diabetes, A1C": {
-				"required": true
-			},
 			"Depression-PHQ9 Total": {
 				"required": true
 			},
@@ -1106,9 +1169,6 @@
 			},
 			"Psychiatrist's Rec, Recommendation": {
 				"required": true
-			},
-			"Procedure Notes, Procedure": {
-				"multiSelect": true
 			},
 			"Left Upper Jaw": {
 				"multiSelect": true
@@ -1122,49 +1182,7 @@
 			"Right Lower Jaw": {
 				"multiSelect": true
 			},
-			"CHD, Followup": {
-				"allowFutureDates": true
-			},
-			"Hypertension, FollowUp": {
-				"allowFutureDates": true
-			},
-			"COPD, FollowUp": {
-				"allowFutureDates": true
-			},
-			"Asthma, FollowUp": {
-				"allowFutureDates": true
-			},
-			"RA, FollowUp": {
-				"allowFutureDates": true
-			},
-			"CKD, FollowUp": {
-				"allowFutureDates": true
-			},
-			"HIVTC, Followup": {
-				"allowFutureDates": true
-			},
-			"Seizure Disorder, FollowUp": {
-				"allowFutureDates": true
-			},
-			"Tuberculosis, FollowUp": {
-				"allowFutureDates": true
-			},
-			"Diabetes, Followup": {
-				"allowFutureDates": true
-			},
-			"CHF, Followup": {
-				"allowFutureDates": true
-			},
-			"Discharge Note, Discharge Date": {
-				"allowFutureDates": true
-			},
-			"Discharge Note, Discharge Date": {
-				"allowFutureDates": true
-			},
 			"ANC, Expected Delivery Date": {
-				"allowFutureDates": true
-			},
-			"CHP ANC, Follow up": {
 				"allowFutureDates": true
 			},
 			"CHP ANC, EDD (Gregorian)": {
@@ -1188,16 +1206,10 @@
 			"Childhood Illness, Fever present": {
 				"required": true
 			},
-			"HTC, Risk Group": {
-				"required": true
-			},
 			"Malaria, Classification": {
 				"required": true
 			},
 			"Discharge Note-Major surgery this admission": {
-				"required": true
-			},
-			"Discharge Note-Post op surgery complications": {
 				"required": true
 			},
 			"Diabetes-Diabetes in control per last lab value": {
@@ -1232,9 +1244,6 @@
 			},
 			"COPD-Cardiovascular exam": {
 				"multiSelect": true
-			},
-			"Referred In": {
-				"required": true
 			},
 			"COPD-Discuss": {
 				"required": true
@@ -1275,12 +1284,6 @@
 			"HTN-Blood Pressure Level": {
 				"required": true
 			},
-			"COPD-Smoking Status": {
-				"required": true
-			},
-			"COPD-Discuss lifestyle modifications": {
-				"required": true
-			},
 			"HTN-Discuss signs of worsening hypertension": {
 				"required": true
 			},
@@ -1308,9 +1311,6 @@
 			"Diabetes-Discuss signs of low blood sugar": {
 				"required": true
 			},
-			"HTN-Discuss Hypertension": {
-				"required": true
-			},
 			"HTN-Discuss lifestyle modifications": {
 				"required": true
 			},
@@ -1331,9 +1331,6 @@
 			},
 			"FRH-Procedure Follow Up": {
 				"allowFutureDates": true
-			},
-			"Procedure Notes, Procedure": {
-				"required": true
 			},
 			"Operative Notes, Procedure": {
 				"required": true
@@ -1369,8 +1366,14 @@
 			"Safe abortion-Visit Type": {
 				"required": true
 			},
-			"Surgical Abortion, Immediate complications": {
-				"multiSelect": true
+			"Safe abortion-Surgical procedure": {
+				"required": true
+			},
+			"Safe abortion-Medical Procedure": {
+				"required": true
+			},
+			"PAC Cause": {
+				"required": true
 			},
 			"PTSD-Follow Up": {
 				"allowFutureDates": true
@@ -1393,131 +1396,6 @@
 			},
 			"Mental Health-Signs and Symptoms": {
 				"required": true,
-				"multiSelect": true
-			},
-			"Mental health-Visit type": {
-				"required": true
-			},
-			"Depression-Patient History": {
-				"required": true
-			},
-			"Depression Followup-Improvement": {
-				"required": true
-			},
-			"Depression-Signs of mania": {
-				"required": true
-			},
-			"Depression-Medical Adherence": {
-				"required": true
-			},
-			"Depression-Counseling benefits": {
-				"required": true
-			},
-			"Depression Initial-Counselling": {
-				"required": true,
-				"multiSelect": true
-			},
-			"Depression F/U-Follow up": {
-				"required": true
-			},
-			"Depression-Consent for Household Visit": {
-				"required": true
-			},
-			"Depression-Recommendation Rationale Followed": {
-				"required": true
-			},
-			"Depression Initial-Patient History": {
-				"required": true
-			},
-			"Depression Initial-Grief": {
-				"required": true
-			},
-			"Depression Initial-History of Mania": {
-				"required": true
-			},
-			"Depression-Severity of depression": {
-				"required": true
-			},
-			"Depression Initial-Progress Toward Goal of Treatment": {
-				"required": true
-			},
-			"Depression Initial-Follow up visit": {
-				"required": true
-			},
-			"Depression Initial-Consent for Household Visit": {
-				"required": true
-			},
-			"Depression Follow up-Conselling": {
-				"required": true,
-				"multiSelect": true
-			},
-			"Depression-F/U-PHQ9-1": {
-				"required": true
-			},
-			"Depression-F/U-PHQ9-2": {
-				"required": true
-			},
-			"Depression-F/U-PHQ9-3": {
-				"required": true
-			},
-			"Depression-F/U-PHQ9-4": {
-				"required": true
-			},
-			"Depression-F/U-PHQ9-5": {
-				"required": true
-			},
-			"Depression-F/U-PHQ9-6": {
-				"required": true
-			},
-			"Depression-F/U-PHQ9-7": {
-				"required": true
-			},
-			"Depression-F/U-PHQ9-8": {
-				"required": true
-			},
-			"Depression-F/U-PHQ9-9": {
-				"required": true
-			},
-			"Depression Initial-PHQ9-1": {
-				"required": true
-			},
-			"Depression Initail-PHQ9-2": {
-				"required": true
-			},
-			"Depression Initial -PHQ9-3": {
-				"required": true
-			},
-			"Depression Initial-PHQ9-4": {
-				"required": true
-			},
-			"Depression Initial-PHQ9-5": {
-				"required": true
-			},
-			"Depression Initial-PHQ9-6": {
-				"required": true
-			},
-			"Depression Initial-PHQ9-7": {
-				"required": true
-			},
-			"Depression Initial-PHQ9-8": {
-				"required": true
-			},
-			"Depression Initial-PHQ9-9": {
-				"required": true
-			},
-			"Depression Initial-PHQ9 Effect": {
-				"required": true
-			},
-			"Depression Initial-PHQ9 Total": {
-				"required": true
-			},
-			"Depression-Progress toward Goal of treatment": {
-				"required": true
-			},
-			"Burn Note-Site of burn": {
-				"multiSelect": true
-			},
-			"Burn Note-Degree of burn": {
 				"multiSelect": true
 			},
 			"Burn Note-Complication of burn": {
@@ -1774,9 +1652,6 @@
 			"Psychosis_FU-Follow up": {
 				"required": true
 			},
-			"Psychosis_FU-Consent for household visit": {
-				"required": true
-			},
 			"Psychosis_FU-Psychiatrist's recommendation followed": {
 				"required": true
 			},
@@ -1797,7 +1672,136 @@
 				"required": true
 			},
 			"Discharge Note-Post op surgery complications": {
+				"required": true,
 				"multiSelect": true
+			},
+			"Mental health-Visit type": {
+				"required": true
+			},
+			"Depression-Patient History": {
+				"required": true
+			},
+			"Depression Followup-Improvement": {
+				"required": true
+			},
+			"Depression-Signs of mania": {
+				"required": true
+			},
+			"Depression-Medical Adherence": {
+				"required": true
+			},
+			"Depression-Counseling benefits": {
+				"required": true
+			},
+			"Depression Initial-Counselling": {
+				"required": true,
+				"multiSelect": true
+			},
+			"Depression F/U-Follow up": {
+				"required": true
+			},
+			"Depression-Consent for Household Visit": {
+				"required": true
+			},
+			"Depression-Recommendation Rationale Followed": {
+				"required": true
+			},
+			"Depression Initial-Patient History": {
+				"required": true
+			},
+			"Depression Initial-Grief": {
+				"required": true
+			},
+			"Depression Initial-History of Mania": {
+				"required": true
+			},
+			"Depression-Severity of depression": {
+				"required": true
+			},
+			"Depression Initial-Progress Toward Goal of Treatment": {
+				"required": true
+			},
+			"Depression Initial-Follow up visit": {
+				"required": true
+			},
+			"Depression Initial-Consent for Household Visit": {
+				"required": true
+			},
+			"Depression Follow up-Conselling": {
+				"required": true,
+				"multiSelect": true
+			},
+			"Depression-F/U-PHQ9-1": {
+				"required": true
+			},
+			"Depression-F/U-PHQ9-2": {
+				"required": true
+			},
+			"Depression-F/U-PHQ9-3": {
+				"required": true
+			},
+			"Depression-F/U-PHQ9-4": {
+				"required": true
+			},
+			"Depression-F/U-PHQ9-5": {
+				"required": true
+			},
+			"Depression-F/U-PHQ9-6": {
+				"required": true
+			},
+			"Depression-F/U-PHQ9-7": {
+				"required": true
+			},
+			"Depression-F/U-PHQ9-8": {
+				"required": true
+			},
+			"Depression-F/U-PHQ9-9": {
+				"required": true
+			},
+			"Depression Initial-PHQ9-1": {
+				"required": true
+			},
+			"Depression Initail-PHQ9-2": {
+				"required": true
+			},
+			"Depression Initial -PHQ9-3": {
+				"required": true
+			},
+			"Depression Initial-PHQ9-4": {
+				"required": true
+			},
+			"Depression Initial-PHQ9-5": {
+				"required": true
+			},
+			"Depression Initial-PHQ9-6": {
+				"required": true
+			},
+			"Depression Initial-PHQ9-7": {
+				"required": true
+			},
+			"Depression Initial-PHQ9-8": {
+				"required": true
+			},
+			"Depression Initial-PHQ9-9": {
+				"required": true
+			},
+			"Depression Initial-PHQ9 Effect": {
+				"required": true
+			},
+			"Depression Initial-PHQ9 Total": {
+				"required": true
+			},
+			"Depression-Progress toward Goal of treatment": {
+				"required": true
+			},
+			"Burn Note-Site of burn": {
+				"multiSelect": true
+			},
+			"Burn Note-Degree of burn": {
+				"multiSelect": true
+			},
+			"Psychosis_FU-Consent for household visit": {
+				"required": true
 			},
 			"IMAM, Visit Type": {
 				"required": true
@@ -1810,6 +1814,12 @@
 			},
 			"Delivery Note-Complication Present": {
 				"multiSelect": true
+			},
+			"Rheumatic Heart Disease, FollowUp": {
+				"allowFutureDates": true
+			},
+			"Leprosy, FollowUp": {
+				"allowFutureDates": true
 			},
 			"Snake bite-If yes where" :{
 				"multiSelect": true
@@ -1829,6 +1839,21 @@
 			},
 			"Snake bite-Fang mark": {
 				"required": true
+			},
+			"defaults": {
+				"Number of living children": 1,
+				"Accepted Family Planning methods": [
+					"Condoms",
+					"Pills"
+				],
+				"Pain management given": true,
+				"Safe Abortion, Remarks": "Remarks",
+				"Malaria, Death Date": "2015-12-01"
+			}
+		},
+		"visitPage": {
+			"observationDisplay": {
+				"conceptNames": []
 			}
 		}
 	}
