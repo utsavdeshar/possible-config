@@ -111,7 +111,7 @@
     "opdSummary": {
         "title": "OPD Summary",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "OPD Summary",
             "logo": "../images/nhn-logo.png",
             "showNameAndImage": true
@@ -203,7 +203,7 @@
     "testSummary": {
         "title": "OPD One Pager",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "OPD One Pager",
             "logo": "../images/nhn-logo.png",
             "showNameAndImage": true

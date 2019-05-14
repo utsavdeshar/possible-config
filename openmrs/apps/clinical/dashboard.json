@@ -491,7 +491,7 @@
     "motherhood": {
         "dashboardName": "Motherhood",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "Motherhood Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -528,7 +528,7 @@
     "operationsAndProcedures": {
         "dashboardName": "Operations and Procedures",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "Operations and Procedures Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -565,7 +565,7 @@
     "imam": {
         "dashboardName": "IMAM",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "IMAM Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -602,7 +602,7 @@
     "communityHealth": {
         "dashboardName": "Community Health",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "Community Health Summary",
             "logo": "../images/nhn-logo.png"
         },
