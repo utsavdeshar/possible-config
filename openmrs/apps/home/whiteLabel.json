@@ -1,11 +1,11 @@
 {
   "homePage": {
-    "header_text": "<b>Welcome to NepalEHR",
-    "logo": "/bahmni/images/nepalEhrLogoFull.png",
+    "header_text": "<b>Welcome to Bayalpata Hospital",
+    "logo": "/bahmni/images/nhn-logo.png",
     "title_text": " "
   },
   "loginPage": {
-    "logo": "/bahmni/images/nepalEhrLogoFull.png",
+    "logo": "/bahmni/images/nhn-logo.png",
     "showHeaderText": true,
     "showTitleText": false
   },
