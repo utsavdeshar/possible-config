@@ -4,7 +4,7 @@
         "displayByDefault": true,
         "maxRecentlyViewedPatients": 10,
         "printing": {
-            "title": "Nepal EHR",
+            "title": "Bayalpata Hospital",
             "header": "General Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -443,7 +443,7 @@
     "hiv": {
         "dashboardName": "HIV",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "HIV Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -491,7 +491,7 @@
     "motherhood": {
         "dashboardName": "Motherhood",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "Motherhood Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -528,7 +528,7 @@
     "operationsAndProcedures": {
         "dashboardName": "Operations and Procedures",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "Operations and Procedures Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -614,7 +614,7 @@
     "imam": {
         "dashboardName": "IMAM",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "IMAM Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -651,7 +651,7 @@
     "communityHealth": {
         "dashboardName": "Community Health",
         "printing": {
-            "title": "NepalEHR",
+            "title": "Bayalpata Hospital",
             "header": "Community Health Summary",
             "logo": "../images/nhn-logo.png"
         },
@@ -682,7 +682,112 @@
                 }
             }
         }
+    },
+
+    "imisOnePager": {
+        "title": "IMIS One Pager",
+        "printing": {
+            "title": "Bayalpata Hospital",
+            "header": "IMIS One Pager",
+            "logo": "../images/nhn-logo.png",
+            "showNameAndImage": true
+        },
+        "sections": {
+            "patientinformation": {
+                "type": "patientInformation",
+                "title": "PatientInformation",
+                "cdashboardConfigonfig": {
+                    "patientAttributes": [],
+                    "addressFields": [
+                        "cityVillage",
+                        "countyDistrict"
+                    ]
+                },
+                "displayOrder": 0
+            },
+            "diagnosis": {
+                "translationKey": "DASHBOARD_TITLE_DIAGNOSIS_KEY",
+                "type": "diagnosis",
+                "showCertainty": true,
+                "showOrder": true,
+                "showDetailsButton": false,
+                "displayOrder": 1,
+                "numberOfVisits": 1,
+                "dashboardConfig": {
+                    "numberOfVisits": 1,
+                    "title": null,
+                    "groupByVisits": true
+                }
+            },
+            "conditions": {
+                "translationKey": "CONDITION_LIST_DISPLAY_CONTROL_TITLE",
+                "type": "conditionsList",
+                "displayOrder": 2
+            },            
+            "observation": {
+                "translationKey": "DASHBOARD_TITLE_USG_KEY",
+                "type": "usg",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "showDetailsButton": true,
+                    "conceptNames": [
+                        "USG, Probe Used",
+                        "USG, Cleaned before use?",
+                        "USG, Findings",
+                        "USG, Remarks",
+                        "USG, Cleaned after use?"
+                    ],
+                    "numberOfVisits": 1
+                },
+                "displayOrder": 3
+            },
+            "disposition": {
+                "translationKey": "DISPOSITION_BOARD_LABEL_KEY",
+                "type": "disposition",
+                "numberOfVisits": 1,
+                "showDetailsButton": true,
+                "displayOrder": 4
+            },
+            "investigationResult": {
+                "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
+                "type": "labOrders",
+                "dashboardConfig": {
+                    "title": null,
+                    "numberOfVisits": 1,
+                    "showChart": false,
+                    "showTable": true,
+                    "showNormalLabResults": true,
+                    "showCommentsExpanded": true,
+                    "showAccessionNotes": true,
+                    "showDetailsButton": false
+                },
+                "displayOrder": 5
+            },
+            "treatment": {
+                "type": "treatment",
+                "translationKey": "Treatments",
+                "dashboardConfig": {
+                    "showFlowSheet": false,
+                    "showListView": true,
+                    "showRoute": false,
+                    "showDrugForm": false,
+                    "numberOfVisits": 1,
+                    "showOtherActive": true,
+                    "showDetailsButton": false
+                },
+                "displayOrder": 6
+            },
+            "Radiology Orders": {
+                "type": "pacsOrders",
+                "translationKey": "Radiology Orders",
+                "orderType": "Radiology Order",
+                "displayOrder": 7,
+                "dashboardConfig": {
+                    "numberOfVisits": 1,
+                    "pacsImageUrl": "/oviyam2/viewer.html?patientID={{patientID}}&accessionNumber={{orderNumber}}&serverName=dcm4chee"
+                }         
+            }
+        }
     }
-	}
-	
+}
 }

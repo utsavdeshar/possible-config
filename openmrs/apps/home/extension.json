@@ -31,9 +31,10 @@
 	},
 
 	"orders": {
-		"id": "bahmni.orders",
+		"id": "bahmni.orders"
+	},
 
-		"bahmniIpd": {
+	"bahmniIpd": {
 			"id": "bahmni.ipd",
 			"extensionPointId": "org.bahmni.home.dashboard",
 			"type": "link",
@@ -186,4 +187,3 @@
 			"order": 17
 		}
 	}
-}
