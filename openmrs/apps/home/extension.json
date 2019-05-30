@@ -38,7 +38,7 @@
 			"id": "bahmni.ipd",
 			"extensionPointId": "org.bahmni.home.dashboard",
 			"type": "link",
-			"translationKey": "MODULE_LABEL_BED_MANAGEMENT_KEY",
+			"translationKey": "Bed Management",
 			"label": "InPatient",
 			"url": "../bedmanagement/#/home",
 			"icon": "fa-bed",
