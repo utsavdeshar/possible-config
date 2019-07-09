@@ -81,7 +81,8 @@
             "Safe Abortion",
 	    "Safe abortion QI note",
 	    "Antenatal checkup(ANC) note",
-	    "Safe abortion (SA) note"
+	    "Safe abortion (SA) note",
+	    "Safe abortion"
         ],
         "lessThanTwoMonths":[
             "CBIMNCI (<2 months child)",
