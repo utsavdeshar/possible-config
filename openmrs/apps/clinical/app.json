@@ -1839,6 +1839,9 @@
 			},
 			"Snake bite-Fang mark": {
 				"required": true
+			},
+                        "NBA-Resuscitation": {
+                                "multiSelect": true
 			}
 		},
 		"visitPage": {
