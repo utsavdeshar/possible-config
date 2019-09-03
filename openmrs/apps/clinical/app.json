@@ -1840,6 +1840,10 @@
 			"Snake bite-Fang mark": {
 				"required": true
 			},
+                        "HIVTC, ART Treatment Adherence": {
+                                "multiSelect": true,
+                                "required": true
+			},
                         "NBA-Resuscitation": {
                                 "multiSelect": true
 			}
