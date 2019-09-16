@@ -73,6 +73,10 @@
   "CONSULTATION_BOARD_LABEL_KEY":"Consulta",
   "DISPOSITION_BOARD_LABEL_KEY":"Disposición",
   "DIAGNOSIS_BOARD_LABEL_KEY":"Diagnóstico",
+  
+  "DASHBOARD_REPORT_ER_GENERAL_NOTES_LABEL_KEY":"ER Notas generales",
+  "DASHBOARD_REPORT_OPD_VISIT_NOTES_LABEL_KEY":"Notas de visita",
+  
 
   "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT": "Necesita impresora para esta orden",
   "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT_BUTTON": "Necesita impresora",
