@@ -1840,12 +1840,25 @@
 			"Snake bite-Fang mark": {
 				"required": true
 			},
+
                         "HIVTC, ART Treatment Adherence": {
                                 "multiSelect": true,
                                 "required": true
 			},
                         "NBA-Resuscitation": {
                                 "multiSelect": true
+			},
+	               "NBA-Resuscitation": {
+           		       "multiSelect": true
+			},
+			"Depression-Suicide risk category":{
+				"required": true
+			},
+			"Depression-Patient not hospitalized":{
+				"multiSelect": true
+			},
+			"Depression-Safety planning":{
+				"multiSelect": true
 			}
 		},
 		"visitPage": {

@@ -692,12 +692,46 @@
                 },
                 "displayOrder": 3
             },
+            "erGeneralNotes": {
+                "translationKey": "DASHBOARD_REPORT_ER_GENERAL_NOTES_LABEL_KEY",
+                    "type": "er",
+                    "isObservation": true,
+                    "dashboardConfig": {
+                        "showDetailsButton": true,
+                            "conceptNames": [
+                                "ER-Chief complaint",
+                                "ER-HPI notes",
+                                "ER-Medical history",
+                                "ER-Physical examination",
+                                "ER-Assessment and Plan"
+                        ],
+                        "numberOfVisits": 1
+                    },
+                   "displayOrder": 4
+            },
+            "acuteOpdVisit" : {
+                "translationKey": "DASHBOARD_REPORT_OPD_VISIT_NOTES_LABEL_KEY",
+                    "type": "acuteOpdVisit",
+                    "isObservation": true,
+                    "dashboardConfig": {
+                        "showDetailsButton": true,
+                            "conceptNames": [
+                                "OPD-Chief complaint",
+                                "OPD-HPI notes",
+                                "OPD-Medical history",
+                                "OPD-Physical examination",
+                                "OPD-Assessment and plan"
+                        ],
+                        "numberOfVisits": 1
+                    },
+                   "displayOrder": 5
+            },
             "disposition": {
                 "translationKey": "DISPOSITION_BOARD_LABEL_KEY",
                 "type": "disposition",
                 "numberOfVisits": 1,
                 "showDetailsButton": true,
-                "displayOrder": 4
+                "displayOrder": 6
             },
             "investigationResult": {
                 "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
@@ -712,7 +746,7 @@
                     "showAccessionNotes": true,
                     "showDetailsButton": false
                 },
-                "displayOrder": 5
+                "displayOrder": 7
             },
             "treatment": {
                 "type": "treatment",
@@ -726,13 +760,13 @@
                     "showOtherActive": true,
                     "showDetailsButton": false
                 },
-                "displayOrder": 6
+                "displayOrder": 8
             },
             "Radiology Orders": {
                 "type": "pacsOrders",
                 "translationKey": "Radiology Orders",
                 "orderType": "Radiology Order",
-                "displayOrder": 7,
+                "displayOrder": 9,
                 "dashboardConfig": {
                     "numberOfVisits": 1,
                     "pacsImageUrl": "/oviyam2/viewer.html?patientID={{patientID}}&accessionNumber={{orderNumber}}&serverName=dcm4chee"
