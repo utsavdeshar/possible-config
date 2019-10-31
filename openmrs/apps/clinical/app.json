@@ -1840,8 +1840,17 @@
 			"Snake bite-Fang mark": {
 				"required": true
 			},
-                        "NBA-Resuscitation": {
-                                "multiSelect": true
+            "NBA-Resuscitation": {
+                "multiSelect": true
+			},
+			"Depression-Suicide risk category":{
+				"required": true
+			},
+			"Depression-Patient not hospitalized":{
+				"multiSelect": true
+			},
+			"Depression-Safety planning":{
+				"multiSelect": true
 			}
 		},
 		"visitPage": {
