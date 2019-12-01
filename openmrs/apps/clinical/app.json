@@ -1845,6 +1845,16 @@
 			},
 			"PNC-Visit number": {
 				"multiSelect": true
+            },
+			"HIVTC, ART Treatment Adherence": {
+                "multiSelect": true,
+                "required": true
+			},
+            "NBA-Resuscitation": {
+                "multiSelect": true
+			},
+			"NBA-Resuscitation": {
+           		"multiSelect": true
 			},
 			"Depression-Suicide risk category":{
 				"required": true
