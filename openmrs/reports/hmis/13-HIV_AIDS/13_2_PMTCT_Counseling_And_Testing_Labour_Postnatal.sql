@@ -211,7 +211,7 @@ FROM
        
 WHERE
     DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE) 
-	AND obs.voided != 0
+	AND obs.voided != 1
   
     
   
