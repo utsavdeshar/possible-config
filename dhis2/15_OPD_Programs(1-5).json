@@ -74,7 +74,7 @@
           "column": 3
         },
 		 {
-		 "_comment": "Hepatitis B-F",
+		 "_comment": "Hepatitis b-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "cI801zaVGau",
           "row": 11,
@@ -156,7 +156,7 @@
           "column": 4
         },
 		 {
-		 "_comment": "Hepatitis B-M",
+		 "_comment": "Hepatitis b-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "cI801zaVGau",
           "row": 11,
@@ -184,21 +184,21 @@
           "column": 3
         },
 		 {
-		 "_comment": "Clinical Malaria-F",
+		 "_comment": "Clinical Malaria note-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "QDaBpwjmfws",
           "row": 3,
           "column": 3
         },
 		 {
-		 "_comment": "Malaria(Plasmodium Falciparum)-F",
+		 "_comment": "Malaria note(Plasmodium falciparum)-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "fZsSPCGs3d9",
           "row": 4,
           "column": 3
         },
 		 {
-		 "_comment": "Malaria(Plasmodium Vivax)-F",
+		 "_comment": "Malaria note(Plasmodium vivax)-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "LZYfptKIqkh",
           "row": 5,
@@ -289,7 +289,7 @@
           "column": 3
         },
 		 {
-		 "_comment": "Volume Depletion (Dehydration)-F",
+		 "_comment": "Volume depletion (Dehydration)-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "ZZsL7yaqg4L",
           "row": 18,
@@ -315,21 +315,21 @@
           "column": 4
         },
 		 {
-		 "_comment": "Clinical Malaria-M",
+		 "_comment": "Clinical Malaria note-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "QDaBpwjmfws",
           "row": 3,
           "column": 4
         },
 		 {
-		 "_comment": "Malaria(Plasmodium Falciparum)-M",
+		 "_comment": "Malaria note(Plasmodium falciparum)-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "fZsSPCGs3d9",
           "row": 4,
           "column": 4
         },
 		 {
-		 "_comment": "Malaria(Plasmodium Vivax)-M",
+		 "_comment": "Malaria note(Plasmodium vivax)-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "LZYfptKIqkh",
           "row": 5,
@@ -420,7 +420,7 @@
           "column": 4
         },
 		 {
-		 "_comment": "Volume Depletion (Dehydration)-M",
+		 "_comment": "Volume depletion (Dehydration)-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "ZZsL7yaqg4L",
           "row": 18,
@@ -454,7 +454,7 @@
           "column": 3
         },
 		 {
-		 "_comment": "Urethral Discharge Syndrome(UDS)Gonococal-F",
+		 "_comment": "Urethral discharge syndrome(UDS)Gonococal-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "B8CqXFlCBr5",
           "row": 4,
@@ -462,14 +462,14 @@
         },
 		 
 		 {
-		 "_comment": "Vaginal Discharge Syndrome (VDS)-F",
+		 "_comment": "Vaginal discharge syndrome (VDS)-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "HuGvgg2pOA2",
           "row": 6,
           "column": 3
         },
 		 {
-		 "_comment": "Lower Abdominal Pain Syndrome (LAPS)-F",
+		 "_comment": "Lower Abdominal pain Syndrome (LAPS)-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "uPijgtgd0jA",
           "row": 7,
@@ -490,7 +490,7 @@
           "column": 3
         },
 		 {
-		 "_comment": "Inguinal Bubo Syndrome (IBS)-F",
+		 "_comment": "Inguinal bubo syndrome (IBS)-F",
           "categoryOptionCombo": "ye1QuAMRG5Z",  
           "dataElement": "s4WLJ0dumzx",
           "row": 11,
@@ -586,7 +586,7 @@
           "column": 4
         },
 		 {
-		 "_comment": "Urethral Discharge Syndrome(UDS)Gonococal-M",
+		 "_comment": "Urethral discharge syndrome(UDS)Gonococal-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "B8CqXFlCBr5",
           "row": 4,
@@ -601,14 +601,14 @@
         },
 		 
 		 {
-		 "_comment": "Vaginal Discharge Syndrome (VDS)-M",
+		 "_comment": "Vaginal discharge syndrome (VDS)-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "HuGvgg2pOA2",
           "row": 6,
           "column": 4
         },
 		 {
-		 "_comment": "Lower Abdominal Pain Syndrome (LAPS)-M",
+		 "_comment": "Lower Abdominal pain Syndrome (LAPS)-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "uPijgtgd0jA",
           "row": 7,
@@ -629,7 +629,7 @@
           "column": 4
         },
 		 {
-		 "_comment": "Inguinal Bubo Syndrome (IBS)-M",
+		 "_comment": "Inguinal bubo syndrome (IBS)-M",
           "categoryOptionCombo": "PflKpozpO7b",  
           "dataElement": "s4WLJ0dumzx",
           "row": 11,
@@ -705,7 +705,7 @@
 	
 	
 	
-	"OPD Nutritional and Metabolic Disorder": {
+	"OPD Nutrition noteal and Metabolic Disorder": {
       "dataValues": [    						 
         {
 		"_comment": "Goitre, Cretinism-F",

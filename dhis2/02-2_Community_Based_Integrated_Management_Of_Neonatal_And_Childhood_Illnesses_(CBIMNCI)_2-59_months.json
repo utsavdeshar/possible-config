@@ -105,14 +105,14 @@
 					"column": 2
 				},
 				{
-					"_comment": "IV Fluid",
+					"_comment": "IV fluid",
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "PbkNwfEqhmR",
 					"row": 3,
 					"column": 2
 				},
 				{
-					"_comment": "Anti-helminthes",
+					"_comment": "Anti helminthes",
 					"categoryOptionCombo": "J0QYmZGlEii",
 					"dataElement": "B713onHvu2I",
 					"row": 2,
@@ -128,7 +128,7 @@
 			]
 		},
 
-		"Childhood Illness (2-59)Measles Falciparum Malaria Non Falciparum Malaria Complicated Malaria Fever Anaemia Other": {
+		"Childhood Illness (2-59)Measles Falciparum Malaria note Non Falciparum Malaria note Complicated Malaria note Fever Anaemia Other": {
 			"dataValues": [{
 					"categoryOptionCombo": "kdsirVNKdhm",
 					"dataElement": "g4gt5htFQEZ",
