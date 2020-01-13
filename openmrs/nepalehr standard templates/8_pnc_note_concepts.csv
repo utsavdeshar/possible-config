@@ -1,5 +1,5 @@
 "uuid","name","description","class","shortname","datatype","units","High Normal","Low Normal","Allow Decimal","locale","synonym.1","synonym.2","answer.1","answer.2","answer.3","answer.4","answer.5","answer.6","answer.7","reference-term-source","reference-term-code","reference-term-relationship"
-"2a3aa78f-0f98-43fc-80a3-215e4baf3290","PNC, PNC visit date",,"Misc","PNC visit date","Date",,,,,,"","","","","","","","","",,,
+"2a3aa78f-0f98-43fc-80a3-215e4baf3290","PNC-Visit date",,"Misc","PNC visit date","Date",,,,,,"","","","","","","","","",,,
 "126ced65-6e96-4f97-9369-19a49e83325c","Referred in",,"Misc","Referred in","Boolean",,,,,,"","","","","","","","","",,,
 "d5b3fd8e-0ebc-445f-b712-272459d7c6f8","PNC-First visit",,"Misc","First visit","Date",,,,,,"","","","","","","","","",,,
 "34fb935c-892a-442f-8e40-09a330874f17","PNC-Second visit",,"Misc","Second visit","Date",,,,,,"","","","","","","","","",,,

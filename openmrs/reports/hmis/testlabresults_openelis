@@ -194,8 +194,8 @@
  Lymphocyte (Synovial Fluid)                |           0
  Magnesium                                  |           0
  Major Surgery TBD                          |           0
- Malaria Abs                                |           2
- Malaria Ags                                |           6
+ Malaria note Abs                                |           2
+ Malaria note Ags                                |           6
  Mantoux Test                               |           0
  MCH                                        |          55
  MCHC                                       |          55
@@ -224,7 +224,7 @@
  Nitrates (Urine)                           |           0
  Occult Blood Test                          |           6
  Oxalates (Urine)                           |          61
- PBS for Malaria,Filaria Parasites          |           0
+ PBS for Malaria note,Filaria Parasites          |           0
  PCV (Blood)                                |          55
  pH (CSF)                                   |           0
  Phosphates (Urine)                         |          61

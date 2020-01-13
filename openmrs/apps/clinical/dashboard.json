@@ -64,20 +64,20 @@
                 "formGroup": ["Patient Vitals", "Acute OPD visit", "Acute Abdominal Complaint", "Acute HEENT Complaint",
                     "Acute MSK Complaint", "Acute Skin Complaint", "Acute GU Complaint", "ANC", "Asthma, Progress", "Childhood Illness (Children aged below 2 months)",
                     "Childhood Illness( Children aged 2 months to 5 years)", "CHP Antenatal Care", "CHP Chronic Disease Counseling", "CHP Registration", "Newborn admission (NBA) note",
-                    "Chronic Kidney Disease, Progress", "COPD, Progress", "Congestive Heart Failure, Progress", "Death Note", "Delivery note", "Dental", "Dental Note",
-                    "Depression Note", "Depression-Followup Visit", "Depression-Initial Visit", "PTSD-PCL Initial Note", "Diabetes, Progress", "Discharge Note", "DRTuberculosis, Intake", "ECG Notes", "ER General Notes", "Family Planning Template",
+                    "Chronic Kidney Disease, Progress", "COPD, Progress", "Congestive heart failure, Progress", "Death note", "Delivery note", "Dental", "Dental note",
+                    "Depression Note", "Depression-Followup Visit", "Depression-Initial Visit", "PTSD-PCL Initial Note", "Diabetes, Progress", "Discharge note", "DRTuberculosis, Intake", "ECG Notes", "ER General note", "Family Planning Template",
                     "HIV Testing and Counseling Intake Template", "HIV Treatment and Care Intake Template", "HIV Treatment and Care Progress Template", "Hypertension, Progress",
-                    "IMAM Program", "Kalaazar, Template", "Leprosy, Template", "Mental Health", "Mental Health Screener", "Malaria", "Nutrition", "Operative Notes",
+                    "IMAM note", "Kalazar note", "Leprosy note", "Mental Health", "Mental Health Screener", "Malaria note", "Nutrition note", "Operative note",
                     "Opioid Substitution Therapy Intake Template", "Opioid Substitution Therapy Intake Template", "Opportunistic Infection Template", "Orthopaedic Examination",
-                    "PNC note", "Post Delivery Family Planning Checklist", "Prevention of Mother-to-Child Transmission Intake Template", "Procedure Notes", "Psychiatrist's Recommendation",
-                    "Psychosis Followup Note", "PTSD-PCL Follow Up", "Psychosis Intake Note", "Rheumatoid Arthritis, Progress", "Rheumatic Heart Disease, Progress", "Safe Abortion", "Seizure Disorder, Progress",
-                    "Sextually Transmitted Infections Intake Template", "Stroke OPD", "Trauma Notes", "Tuberculosis, Intake", "USG Notes", "TEST TEMPLATE (टेस्ट टेम्प्लेट)"
+                    "PNC note", "Post Delivery Family Planning Checklist", "Prevention of Mother-to-Child Transmission Intake Template", "Procedure note", "Psychiatrist's Recommendation",
+                    "Psychosis Followup Note", "PTSD-PCL Follow Up", "Psychosis Intake Note", "Rheumatoid Arthritis, Progress", "Rheumatic Heart Disease, Progress", "Safe abortion (SA) note", "Seizure Disorder, Progress",
+                    "Sextually transmitted infections Intake Template", "Stroke OPD", "Trauma Notes", "Tuberculosis, Intake", "USG Notes", "TEST TEMPLATE (टेस्ट टेम्प्लेट)"
                 ],
                 "displayOrder": 3
             },
             "deathNote": {
                 "translationKey": "DASHBOARD_TITLE_DEATH_NOTE_KEY",
-                "templateName": "Death Note Template",
+                "templateName": "Death note Template",
                 "type": "diseaseTemplate",
                 "showOnly": [],
                 "showDetailsButton": true,
@@ -169,12 +169,12 @@
                         "numberOfVisits": "4",
                         "groupBy": "encounters",
                         "obsConcepts": [
-                            "Systolic",
+                            "BP data-BP data-BP data-BP data-Systolic",
                             "Diastolic",
                             "Temperature",
                             "Heart Rate",
                             "Respiratory Rate",
-                            "Oxygen Saturation",
+                            "Oxygen saturation",
                             "Weight"
                         ],
                         "drugConcepts": "",
@@ -278,7 +278,7 @@
             },
             "dischargeNote": {
                 "translationKey": "DASHBOARD_TITLE_DISCHARE_NOTE_KEY",
-                "templateName": "Discharge Note Template",
+                "templateName": "Discharge note Template",
                 "type": "diseaseTemplate",
                 "showOnly": [],
                 "showDetailsButton": true,
@@ -372,7 +372,7 @@
             },
             "malaria": {
                 "translationKey": "DASHBOARD_TITLE_MALARIA_KEY",
-                "templateName": "Malaria Disease Template",
+                "templateName": "Malaria note Disease Template",
                 "type": "diseaseTemplate",
                 "showOnly": [],
                 "showDetailsButton": true,

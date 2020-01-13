@@ -21,7 +21,7 @@ uuid,name,description,class,shortname,datatype,units,High Normal,Low Normal,Allo
 ,Burn note-Fourth degree,,Misc,4th degree,N/A,,,,,,,,,,,,,,,,,,,,,,
 ,Burn note-Degree of burn,Highest degree of burn should be selected,Misc,Degree of burn,Coded,,,,,,,,Burn note-First degree,Burn note-Second degree,Burn note-Third degree,Burn note-Fourth degree,,,,,,,,,,,
 ,Infection,,Misc,Infection,N/A,,,,,,,,,,,,,,,,,,,,,,
-,"Sepsis, unspecified",,Diagnosis,Sepsis NOS,N/A,,,,,,Septicaemia,,,,,,,,,,,ICD-10-WHO,A41.9,SAME-AS,,,
+,"Sepsis, unspecified",,Diagnosis,Sepsis nos,N/A,,,,,,Septicaemia,,,,,,,,,,,ICD-10-WHO,A41.9,SAME-AS,,,
 ,Burn note-Contracture,,Misc,Contracture,N/A,,,,,,,,,,,,,,,,,,,,,,
 ,Burn note-Amputation,,Misc,Amputation,N/A,,,,,,,,,,,,,,,,,,,,,,
 ,Burn note-Complication of burn,,Misc,Complication of burn,Coded,,,,,,,,Infection,"Sepsis, unspecified",Burn note-Contracture,Burn note-Amputation,,,,,,,,,,,

@@ -59,7 +59,7 @@
 					}
 				},
 				{
-					"name": "Childhood Illness (2-59)Measles Falciparum Malaria Non Falciparum Malaria Complicated Malaria Fever Anaemia Other",
+					"name": "Childhood Illness (2-59)Measles Falciparum Malaria note Non Falciparum Malaria note Complicated Malaria note Fever Anaemia Other",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/02_2_CBIMNCI_2to59_months/2_59_months_total_disease.sql"
@@ -156,30 +156,30 @@
 		}
 	},
 
-	"03-1 Nutrition Dataset Newly Registered": {
-		"name": "03-1 Nutrition Dataset Newly Registered",
+	"03-1 Nutrition note Dataset Newly Registered": {
+		"name": "03-1 Nutrition note Dataset Newly Registered",
 		"type": "concatenated",
 		"DHISProgram": true,
 		"config": {
 			"reports": [{
-					"name": "Nutrition status of registered children (new and old)",
+					"name": "Nutrition note status of registered children (new and old)",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1_Nutrition_Dataset_Newly_Registered/Nutrition_status_of_registered_children.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1_Nutrition note_Dataset_Newly_Registered/Nutrition note_status_of_registered_children.sql"
 					}
 				},
 				{
 					"name": "Pregnant women receiving",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1_Nutrition_Dataset_Newly_Registered/Pregnant_women_receiving.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1_Nutrition note_Dataset_Newly_Registered/Pregnant_women_receiving.sql"
 					}
 				},
 				{
 					"name": "Less then 5 yrs Children receiving (Bi annual)",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1_Nutrition_Dataset_Newly_Registered/Under_5_yrs_Children_receiving.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-1_Nutrition note_Dataset_Newly_Registered/Under_5_yrs_Children_receiving.sql"
 					}
 				}
 
@@ -187,8 +187,8 @@
 		}
 	},
 
-	"03-2 Nutrition Acute Malnutrition": {
-		"name": "03-2 Nutrition Acute Malnutrition",
+	"03-2 Nutrition note Acute Malnutrition": {
+		"name": "03-2 Nutrition note Acute Malnutrition",
 		"type": "concatenated",
 		"DHISProgram": true,
 		"config": {
@@ -198,14 +198,14 @@
 					"name": "Integrated Management of Acute Malnutrition (IMAM) Program",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-2_Nutrition_Acute_Malnutrition/Integrated_Management_of_Acute_Malnutrition_IMAM_Program.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-2_Nutrition note_Acute_Malnutrition/Integrated_Management_of_Acute_Malnutrition_IMAM_Program.sql"
 					}
 				},
 				{
 					"name": "Infant and Young Child Feeding",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-2_Nutrition_Acute_Malnutrition/Infant_Young_Child_Feeding.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/03-2_Nutrition note_Acute_Malnutrition/Infant_Young_Child_Feeding.sql"
 					}
 				}
 			]
@@ -295,21 +295,21 @@
 					}
 				},
 				{
-					"name": "Safe Abortion Service",
+					"name": "Safe abortion (SA) note Service",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Safe_Abortion_Service.sql"
 					}
 				},
 				{
-					"name": "Safe Abortion Family Planning",
+					"name": "Safe abortion (SA) note Family Planning",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Family_planning_Method.sql"
 					}
 				},
 				{
-					"name": "Safe Abortion Total",
+					"name": "Safe abortion (SA) note Total",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Safe_Abortion_Total.sql"
@@ -888,10 +888,10 @@
 					}
 				},
 				{
-					"name": "OPD Nutritional and Metabolic Disorder",
+					"name": "OPD Nutrition noteal and Metabolic Disorder",
 					"type": "MRSGeneric",
 					"config": {
-						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-04_OPD_Nutritional_Metabolic_Disorder.sql"
+						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/15-OPD/15-04_OPD_Nutrition noteal_Metabolic_Disorder.sql"
 					}
 				},
 				{
@@ -1064,7 +1064,7 @@
 					}
 				},
 				{
-					"name": "Hospital Services - Referred In patient",
+					"name": "Hospital Services - Referred in patient",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_in.sql"
@@ -1345,7 +1345,7 @@
 		"config": {
 			"ageGroupName": "All Ages",
 			"conceptNames": [
-				"Safe Abortion, Post Abortion Care"
+				"SA-Post abortioon care"
 			]
 		}
 	},
@@ -1385,7 +1385,7 @@
 		"config": {
 			"ageGroupName": "IMAM",
 			"conceptNames": [
-				"Nutrition, Nutritional Status"
+				"Nutrition note-Nutrition noteal status"
 			]
 		}
 	},

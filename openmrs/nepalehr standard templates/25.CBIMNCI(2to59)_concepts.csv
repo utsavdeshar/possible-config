@@ -64,7 +64,7 @@ Psych<br>","Misc","Pertinent system","Text",,,,,,"","","","","","","","","","",,
 "2753214b-67a1-42ab-ae8c-46b504904f22","Some dehydration",,"Misc","Some dehydration","N/A",,,,,,"","","","","","","","","","",,,
 "13309b73-0315-4039-9503-ad916393491a","Severe dehydration",,"Misc","Severe dehydration","N/A",,,,,,"","","","","","","","","","",,,
 "38d06edc-3d93-4025-83ad-9d1b43d24f73","Not applicable",,"Misc","Not applicable","N/A",,,,,,"NA","","","","","","","","","",,,
-"253012a5-5525-4f3a-bb2e-c87427eef4ba","Childhood Illness-Dehydration status","Severe Dehydration (If any of two given signs present)
+"253012a5-5525-4f3a-bb2e-c87427eef4ba","Childhood Illness-Dehydration status","Severe dehydration (If any of two given signs present)
 
 	<li>Lethargic or unconscious
 
@@ -83,7 +83,7 @@ Some dehydration:
 
 	<li>Skin pinch goes back slowly (<2 seconds)
                                                            
-No Dehydration:
+No dehydration:
 
 	<li>No sufficient signs to classify under severe or some dehydration","Misc","Dehydration status","Coded",,,,,,"","","No dehydration","Some dehydration","Severe dehydration","Not applicable","","","","",,,
 "79e89866-c222-4a87-9ec8-3a70e3855e4b","Childhood Illness-Fever present",,"Misc","Fever present","Boolean",,,,,,"","","","","","","","","","",,,
@@ -124,7 +124,7 @@ No Dehydration:
 "791ca757-963e-433e-9104-9d63c67212c5","Normal weight",,"Misc",,"N/A",,,,,,"","","","","","","","","","",,,
 "df08934b-5ba5-4583-a40c-515fcfa28a9e","Low weight",,"Misc","Low weight","N/A",,,,,,"","","","","","","","","","",,,
 "e6f85ea2-0cc6-4e5a-b47e-b40a7aab4c32","Very low weight",,"Misc","Very low weight","N/A",,,,,,"","","","","","","","","","",,,
-"9873aa65-146d-483e-8455-90ae37b0fbe3","CBIMNC 2_59-Weight condition",,"Misc",,"Coded",,,,,,"","","Normal weight","Low weight","Very low weight","","","","","",,,
+"9873aa65-146d-483e-8455-90ae37b0fbe3","CBIMNC 2_59-CBIMNC 2_59-Weight condition",,"Misc",,"Coded",,,,,,"","","Normal weight","Low weight","Very low weight","","","","","",,,
 "a36f148e-335f-4522-b0c4-7d5545c5a8aa","Some",,"Misc","Some","N/A",,,,,,"","","","","","","","","","",,,
 "c0e4f196-72db-4f5a-a01a-9d3bb28d9011","Severe",,"Misc","Severe","N/A",,,,,,"","","","","","","","","","",,,
 "cfe5f5cb-e12f-4e17-943c-af4da37c453e","CBIMNCI 2 to 59-Pallor",,"Misc","Pallor","Coded",,,,,,"","","Some","Severe","","","","","","",,,
