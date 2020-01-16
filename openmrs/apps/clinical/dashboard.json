@@ -699,11 +699,11 @@
                     "dashboardConfig": {
                         "showDetailsButton": true,
                             "conceptNames": [
-                                "ER-Chief complaint",
-                                "ER-HPI notes",
-                                "ER-Medical history",
-                                "ER-Physical examination",
-                                "ER-Assessment and Plan"
+                                "ER General Notes, Chief Complaint",
+                                "ER General Notes, HPI Notes",
+                                "ER General Notes, Medical History",
+                                "ER General Notes, Physical Examination",
+                                "ER General Notes, Assessment / Plan"
                         ],
                         "numberOfVisits": 1
                     },
@@ -716,11 +716,11 @@
                     "dashboardConfig": {
                         "showDetailsButton": true,
                             "conceptNames": [
-                                "OPD-Chief complaint",
-                                "OPD-HPI notes",
-                                "OPD-Medical history",
-                                "OPD-Physical examination",
-                                "OPD-Assessment and plan"
+                                "Out Patient Details, Chief Complaint",
+                                "Out Patient Details, HPI Notes",
+                                "Out Patient Details, Medical History",
+                                "Out Patient Details, Physical Examination",
+                                "Out Patient Details, Assessment / Plan"
                         ],
                         "numberOfVisits": 1
                     },
