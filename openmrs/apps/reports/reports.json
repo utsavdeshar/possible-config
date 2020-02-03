@@ -212,7 +212,40 @@
 		}
 	},
 
-	"06 Safe Motherhood Program": {
+	
+
+"procedure_notes": {
+"name": "Procedure Notes",
+"diy": "true",
+"type": "obsTemplate",
+"config": {
+"templateName": "Procedure Notes"
+           }
+},
+
+"Canned_obs": {
+     "name": "Diagnosis Canned OBS Report",
+     "diy": "true",
+     "type": "observations",
+     "config": {
+         "visitAttributes": [
+             "Visit Status",
+             "Admission Status"
+         ],
+         "showVisitInfo": true,
+         "showProvider": true,
+         "conceptNamesToFilter": [ "Coded Diagnosis"],
+         "conceptNameDisplayFormat": "shortNamePreferred",
+         "applyDateRangeFor": "obsDate",
+         "encounterPerRow": false,
+         "forDataAnalysis": true,
+         "visitTypesToFilter": [
+             "General",
+              "Emergency"
+                               ]
+                 }
+},
+"06 Safe Motherhood Program": {
 		"name": "06 Safe Motherhood Program",
 		"DHISProgram": true,
 		"type": "concatenated",
