@@ -62,7 +62,7 @@
                     "maximumNoOfVisits": 1
                 },
                 "formGroup": ["Patient Vitals", "Acute OPD visit", "Acute Abdominal Complaint", "Acute HEENT Complaint",
-                    "Acute MSK Complaint", "Acute Skin Complaint", "Acute GU Complaint", "ANC", "Asthma, Progress", "Childhood Illness (Children aged below 2 months)",
+                    "Acute MSK Complaint", "Acute Skin Complaint", "Acute GU Complaint", "ANC", "Asthma, Progress", "Burn Note", "Childhood Illness (Children aged below 2 months)",
                     "Childhood Illness( Children aged 2 months to 5 years)", "CHP Antenatal Care", "CHP Chronic Disease Counseling", "CHP Registration", "Newborn admission (NBA) note",
                     "Chronic Kidney Disease, Progress", "COPD, Progress", "Congestive Heart Failure, Progress", "Death Note", "Delivery note", "Dental", "Dental Note",
                     "Depression Note", "Depression-Followup Visit", "Depression-Initial Visit", "PTSD-PCL Initial Note", "Diabetes, Progress", "Discharge Note", "DRTuberculosis, Intake", "ECG Notes", "ER General Notes", "Family Planning Template",
