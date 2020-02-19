@@ -26,10 +26,10 @@ FROM
         IS FALSE
     WHERE
         question_concept_name.name IN ('HIVTC FU-Any OI in past 3 months' ,
-        'HIVTC-Opportunistic Infection Diagnosis',
-        'HIVTC-TB Screened',
+        'HIVTC FU-Opportunistic infection diagnosis',
+        'HIVTC FU-TB screened',
         'HIVTC-HIV care IPT started', 
-        'HIVTC-TB Treatment start date'
+        'HIVTC-TB treatment start date'
         )
     ORDER BY answer_name DESC) first_question
         INNER JOIN
@@ -64,10 +64,10 @@ FROM
     INNER JOIN concept_name cn1 ON o1.concept_id = cn1.concept_id
         AND cn1.concept_name_type = 'FULLY_SPECIFIED'
         AND cn1.name IN ('HIVTC FU-Any OI in past 3 months' ,
-        'HIVTC-Opportunistic Infection Diagnosis',
-        'HIVTC-TB Screened',
+        'HIVTC FU-Opportunistic infection diagnosis',
+        'HIVTC FU-TB screened',
         'HIVTC-HIV care IPT started', 
-        'HIVTC-TB Treatment start date'
+        'HIVTC-TB treatment start date'
         
      )
         AND o1.voided = 0
