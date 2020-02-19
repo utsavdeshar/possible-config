@@ -1,9 +1,10 @@
 select
   gender.gender as gender,
+  
   IFNULL(result.total_count,0) as total_count
 from
   concept_view AS question
-  INNER JOIN concept_answer ON question.concept_id = concept_answer.concept_id AND question.concept_full_name IN ('Discharge note-Inpatient outcomes')
+  INNER JOIN concept_answer ON question.concept_id = concept_answer.concept_id AND question.concept_full_name IN ('Discharge note-Inpatient outcome')
   INNER JOIN concept_view AS answer ON answer.concept_id = concept_answer.answer_concept
   AND answer.concept_full_name  IN ('Referred out')
   INNER JOIN (SELECT DISTINCT value_reference AS type FROM visit_attribute) visit_type 
@@ -27,5 +28,4 @@ from
               and answer.concept_id = result.answer_concept_id
               and gender.gender = result.gender
 GROUP BY question.concept_full_name, answer.concept_full_name, gender.gender
-ORDER BY answer.concept_full_name,gender.gender;
-ORDER BY answer.concept_full_name,gender.gender;
+ORDER BY answer.concept_full_name,gender.gender
