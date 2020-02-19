@@ -1,6 +1,5 @@
 select
   gender.gender as gender,
-  
   IFNULL(result.total_count,0) as total_count
 from
   concept_view AS question

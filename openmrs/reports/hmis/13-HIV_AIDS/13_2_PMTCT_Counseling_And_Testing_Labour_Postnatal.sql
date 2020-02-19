@@ -15,7 +15,7 @@ FROM
     concept_name cn2 ON obs.value_coded = cn2.concept_id
         AND cn2.concept_name_type = 'FULLY_SPECIFIED'
         AND cn2.voided = 0
-        AND cn2.name = 'ANC, 1st (any time)'
+        AND cn2.name = 'ANC-1st (any time)'
 WHERE
     DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE) 
 UNION 
@@ -49,7 +49,7 @@ WHERE
             concept_name cn2 ON obs.value_coded = cn2.concept_id
                 AND cn2.concept_name_type = 'FULLY_SPECIFIED'
                 AND cn2.voided = 0
-                AND cn2.name = 'ANC, 1st (any time)'
+                AND cn2.name = 'ANC-1st (any time)'
         WHERE
                DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE)) 
 UNION 
@@ -83,7 +83,7 @@ WHERE
             concept_name cn2 ON obs.value_coded = cn2.concept_id
                 AND cn2.concept_name_type = 'FULLY_SPECIFIED'
                 AND cn2.voided = 0
-                AND cn2.name = 'ANC, 1st (any time)'
+                AND cn2.name = 'ANC-1st (any time)'
         WHERE
                DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE) 
 ) 
@@ -132,7 +132,7 @@ FROM
         AND person.voided = 0
         INNER JOIN
     concept_name deliveryMethodConcept ON deliveryMethodConcept.concept_id = obs.concept_id
-        AND deliveryMethodConcept.name = 'Delivery-Test performed in this delivery??'
+        AND deliveryMethodConcept.name = 'Delivery note-Test performed in this delivery'
         AND deliveryMethodConcept.concept_name_type = 'FULLY_SPECIFIED'
 WHERE
     DATE(obs.obs_datetime) BETWEEN CAST('#startDate#' AS DATE) AND CAST('#endDate#' AS DATE) 
@@ -201,7 +201,7 @@ FROM
         AND person.voided = 0
         INNER JOIN
     concept_name deliveryMethodConcept ON deliveryMethodConcept.concept_id = obs.concept_id
-        AND deliveryMethodConcept.name = 'HCT, Result if tested'
+        AND deliveryMethodConcept.name = 'HCT-Result if tested'
         AND deliveryMethodConcept.concept_name_type = 'FULLY_SPECIFIED'
 		 INNER JOIN
     concept_name cn2 ON obs.value_coded = cn2.concept_id
