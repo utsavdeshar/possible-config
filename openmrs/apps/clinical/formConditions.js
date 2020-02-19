@@ -1,6 +1,6 @@
 var onBloodPressureChange = function (formName, formFieldValues) {
-    var systolic = formFieldValues['Systolic Data'];
-    var diastolic = formFieldValues['Diastolic Data'];
+    var systolic = formFieldValues['Systolic data'];
+    var diastolic = formFieldValues['Diastolic data'];
     if (systolic || diastolic) {
         return {
             enable: ["Posture"]
@@ -12,8 +12,8 @@ var onBloodPressureChange = function (formName, formFieldValues) {
     }
 };
 Bahmni.ConceptSet.FormConditions.rules = {
-    'Diastolic Data': onBloodPressureChange,
-    'Systolic Data': onBloodPressureChange,
+    'Diastolic data': onBloodPressureChange,
+    'Systolic data': onBloodPressureChange,
     'Diabetes, Last A1C result known?': function (formName, formFieldValues) {
         var a1c_known = formFieldValues['Diabetes, Last A1C result known?'];
         if (a1c_known) {

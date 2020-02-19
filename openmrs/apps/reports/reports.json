@@ -215,11 +215,11 @@
 	
 
 "procedure_notes": {
-"name": "Procedure Notes",
+"name": "Procedure note",
 "diy": "true",
 "type": "obsTemplate",
 "config": {
-"templateName": "Procedure Notes"
+"templateName": "Procedure note"
            }
 },
 
@@ -328,21 +328,21 @@
 					}
 				},
 				{
-					"name": "Safe Abortion Service",
+					"name": "Safe abortion (SA) note Service",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Safe_Abortion_Service.sql"
 					}
 				},
 				{
-					"name": "Safe Abortion Family Planning",
+					"name": "Safe abortion (SA) note Family Planning",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Family_planning_Method.sql"
 					}
 				},
 				{
-					"name": "Safe Abortion Total",
+					"name": "Safe abortion (SA) note Total",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/06-Safe_Motherhood_Program/Safe_Abortion_Total.sql"
@@ -1097,7 +1097,7 @@
 					}
 				},
 				{
-					"name": "Hospital Services - Referred In patient",
+					"name": "Hospital Services - Referred in patient",
 					"type": "MRSGeneric",
 					"config": {
 						"sqlPath": "/var/www/bahmni_config/openmrs/reports/hmis/17-1-Hospital_Summary_Dataset/referred_in.sql"
@@ -1378,7 +1378,7 @@
 		"config": {
 			"ageGroupName": "All Ages",
 			"conceptNames": [
-				"Safe Abortion, Post Abortion Care"
+				"SA-Post abortioon care"
 			]
 		}
 	},
@@ -1418,7 +1418,7 @@
 		"config": {
 			"ageGroupName": "IMAM",
 			"conceptNames": [
-				"Nutrition, Nutritional Status"
+				"Nutrition-Nutritional status"
 			]
 		}
 	},

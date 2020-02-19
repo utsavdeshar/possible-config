@@ -62,22 +62,22 @@
                     "maximumNoOfVisits": 1
                 },
                 "formGroup": ["Patient Vitals", "Acute OPD visit", "Acute Abdominal Complaint", "Acute HEENT Complaint",
-                    "Acute MSK Complaint", "Acute Skin Complaint", "Acute GU Complaint", "ANC", "Asthma, Progress", "Burn Note", "Childhood Illness (Children aged below 2 months)",
+                    "Acute MSK Complaint", "Acute Skin Complaint", "Acute GU Complaint", "ANC", "Asthma, Progress", "Burn note", "Childhood Illness (Children aged below 2 months)",
                     "Childhood Illness( Children aged 2 months to 5 years)", "CHP Antenatal Care", "CHP Chronic Disease Counseling", "CHP Registration", "Newborn admission (NBA) note",
-                    "Chronic Kidney Disease, Progress", "COPD, Progress", "Congestive Heart Failure, Progress", "Death Note", "Delivery note", "Dental", "Dental Note",
-                    "Depression Note", "Depression-Followup Visit", "Depression-Initial Visit", "PTSD-PCL Initial Note", "Diabetes, Progress", "Discharge Note", "DRTuberculosis, Intake", "ECG Notes", "ER General Notes", "Family Planning Template",
+                    "Chronic Kidney Disease, Progress", "COPD, Progress", "Congestive heart failure, Progress", "Death note", "Delivery note", "Dental", "Dental note",
+                    "Depression Note", "Depression-Followup Visit", "Depression-Initial Visit", "PTSD-PCL Initial Note", "Diabetes, Progress", "Discharge note", "DRTuberculosis, Intake", "ECG Notes", "ER General note", "Family Planning Template",
                     "HIV Testing and Counseling Intake Template", "HIV Treatment and Care Intake Template", "HIV Treatment and Care Progress Template", "Hypertension, Progress",
-                    "IMAM Program", "Kalaazar, Template", "Leprosy, Template", "Mental Health", "Mental Health Screener", "Malaria", "Nutrition", "Operative Notes",
+                    "IMAM note", "Kalazar note", "Leprosy note", "Mental Health", "Mental Health Screener", "Malaria", "Nutrition", "Operative note",
                     "Opioid Substitution Therapy Intake Template", "Opioid Substitution Therapy Intake Template", "Opportunistic Infection Template", "Orthopaedic Examination",
-                    "PNC note", "Post Delivery Family Planning Checklist", "Prevention of Mother-to-Child Transmission Intake Template", "Procedure Notes", "Psychiatrist's Recommendation",
-                    "Psychosis Followup Note", "PTSD-PCL Follow Up", "Psychosis Intake Note", "Rheumatoid Arthritis, Progress", "Rheumatic Heart Disease, Progress", "Safe Abortion", "Seizure Disorder, Progress",
-                    "Sextually Transmitted Infections Intake Template", "Stroke OPD", "Trauma Notes", "Tuberculosis, Intake", "USG Notes", "TEST TEMPLATE (टेस्ट टेम्प्लेट)"
+                    "PNC note", "Post Delivery Family Planning Checklist", "Prevention of Mother-to-Child Transmission Intake Template", "Procedure note", "Psychiatrist's Recommendation",
+                    "Psychosis Followup Note", "PTSD-PCL Follow Up", "Psychosis Intake Note", "Rheumatoid Arthritis, Progress", "Rheumatic Heart Disease, Progress", "Safe abortion (SA) note", "Seizure Disorder, Progress",
+                    "Sextually transmitted infections Intake Template", "Stroke OPD", "Trauma Notes", "Tuberculosis, Intake", "USG Notes", "TEST TEMPLATE (टेस्ट टेम्प्लेट)"
                 ],
                 "displayOrder": 3
             },
             "deathNote": {
                 "translationKey": "DASHBOARD_TITLE_DEATH_NOTE_KEY",
-                "templateName": "Death Note Template",
+                "templateName": "Death note Template",
                 "type": "diseaseTemplate",
                 "showOnly": [],
                 "showDetailsButton": true,
@@ -174,7 +174,7 @@
                             "Temperature",
                             "Heart Rate",
                             "Respiratory Rate",
-                            "Oxygen Saturation",
+                            "Oxygen saturation",
                             "Weight"
                         ],
                         "drugConcepts": "",
@@ -278,7 +278,7 @@
             },
             "dischargeNote": {
                 "translationKey": "DASHBOARD_TITLE_DISCHARE_NOTE_KEY",
-                "templateName": "Discharge Note Template",
+                "templateName": "Discharge note Template",
                 "type": "diseaseTemplate",
                 "showOnly": [],
                 "showDetailsButton": true,
@@ -699,11 +699,11 @@
                     "dashboardConfig": {
                         "showDetailsButton": true,
                             "conceptNames": [
-                                "ER General Notes, Chief Complaint",
-                                "ER General Notes, HPI Notes",
-                                "ER General Notes, Medical History",
-                                "ER General Notes, Physical Examination",
-                                "ER General Notes, Assessment / Plan"
+                                "ER-Chief complaint",
+                                "ER-HPI notes",
+                                "ER-Medical history",
+                                "ER-Physical examination",
+                                "ER-Assessment and Plan"
                         ],
                         "numberOfVisits": 1
                     },
@@ -716,11 +716,11 @@
                     "dashboardConfig": {
                         "showDetailsButton": true,
                             "conceptNames": [
-                                "Out Patient Details, Chief Complaint",
-                                "Out Patient Details, HPI Notes",
-                                "Out Patient Details, Medical History",
-                                "Out Patient Details, Physical Examination",
-                                "Out Patient Details, Assessment / Plan"
+                                "OPD-Chief complaint",
+                                "OPD-HPI notes",
+                                "OPD-Medical history",
+                                "OPD-Physical examination",
+                                "OPD-Assessment and plan"
                         ],
                         "numberOfVisits": 1
                     },

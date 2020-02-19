@@ -36,4 +36,4 @@ uuid,name,description,class,shortname,datatype,units,High Normal,Low Normal,Allo
 ,Number-1,,Misc,1,N/A,,,,,,,,,,,,,,,
 ,Number-2,,Misc,2,N/A,,,,,,,,,,,,,,,
 ,Number-3,,Misc,3,N/A,,,,,,,,,,,,,,,
-,Vaccine-Hepatitis B,"Give at 0, 1 and 5 months",Misc,Hepatitis B,Coded,,,,,,,Number-1,Number-2,Number-3,,,,,,
+,Vaccine-Hepatitis b,"Give at 0, 1 and 5 months",Misc,Hepatitis b,Coded,,,,,,,Number-1,Number-2,Number-3,,,,,,
